@@ -48,7 +48,7 @@ public class ProdutoResource {
 	}
 	
 	@DeleteMapping("/produto")
-	@ApiOperation(value="Deleta um produto")
+	@ApiOperation(value="Exclui um produto")
 	public void deleteProduto(@RequestBody Produto produto) {
 		produtoRepository.delete(produto);
 	}
